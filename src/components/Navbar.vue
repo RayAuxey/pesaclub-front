@@ -16,8 +16,8 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
           <router-link class="nav-item nav-link active" to="/">Register</router-link>
-          <router-link class="nav-item nav-link" to="/buy">Buy Pesaform</router-link>
-          <router-link class="nav-item nav-link" to="/mylist">Your Pesaforms</router-link>
+          <router-link class="nav-item nav-link" to="/404">Buy Pesaform</router-link>
+          <router-link class="nav-item nav-link" to="/404">Your Pesaforms</router-link>
           <router-link class="nav-item nav-link" to="/allusers" href="#">All Users</router-link>
         </div>
       </div>
