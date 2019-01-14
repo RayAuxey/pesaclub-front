@@ -15,10 +15,27 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <router-link class="nav-item nav-link active" to="/">Register</router-link>
-          <router-link class="nav-item nav-link" to="/404">Buy Pesaform</router-link>
-          <router-link class="nav-item nav-link" to="/404">Your Pesaforms</router-link>
-          <router-link class="nav-item nav-link" to="/allusers" href="#">All Users</router-link>
+          <router-link
+            class="nav-item nav-link"
+            :class="{active : currentLink === '/'}"
+            to="/"
+          >Register</router-link>
+          <router-link
+            class="nav-item nav-link"
+            :class="{active : currentLink === '/buy'}"
+            to="/404"
+          >Buy Pesaform</router-link>
+          <router-link
+            class="nav-item nav-link"
+            :class="{active : currentLink === '/list'}"
+            to="/404"
+          >Your Pesaforms</router-link>
+          <router-link
+            class="nav-item nav-link"
+            :class="{active : currentLink === '/allusers'}"
+            to="/allusers"
+            href="#"
+          >All Users</router-link>
         </div>
       </div>
     </nav>
@@ -26,7 +43,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      currentLink: ""
+    };
+  },
+  watch: {
+    $route(to, from) {
+      this.currentLink = this.$router.currentRoute.fullPath;
+    }
+  }
+};
 </script>
 
 <style>
