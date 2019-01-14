@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <router-link class="navbar-brand" to="/">The PesaClub</router-link>
       <button
         class="navbar-toggler"
