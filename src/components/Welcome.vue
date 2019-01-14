@@ -1,5 +1,7 @@
 <template>
   <div class="container">
+    <h1>Welcome to The Pesaclub</h1>
+    <h3>Please register here</h3>
     <form>
       <div class="form-group">
         <label for="name">Name</label>
@@ -73,4 +75,12 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container > * {
+  margin-bottom: 20px;
+}
 </style>
