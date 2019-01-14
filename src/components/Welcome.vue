@@ -18,7 +18,6 @@ export default {
       .then(res => res.json())
       .then(res => {
         this.users = res.data.users;
-        console.log(this.users);
       });
   }
 };
