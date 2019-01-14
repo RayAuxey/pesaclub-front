@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
     <Navbar/>
     <router-view></router-view>
   </div>
@@ -27,9 +26,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   color: #2c3e50;
-  margin-top: 60px;
 }
 .container {
   max-width: 600px;

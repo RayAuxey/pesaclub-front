@@ -1,7 +1,7 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">The Pesa Club</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <router-link class="navbar-brand" to="/">The Pesa Club</router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -15,17 +15,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <router-link to="/">
-            <a class="nav-item nav-link active" href="#">
-              Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </router-link>
-          <a class="nav-item nav-link" href="#">Buy Pesaform</a>
-          <a class="nav-item nav-link" href="#">Your Pesaforms</a>
-          <router-link to="/allusers">
-            <a class="nav-item nav-link" href="#">All Users</a>
-          </router-link>
+          <router-link class="nav-item nav-link active" to="/">Home</router-link>
+          <router-link class="nav-item nav-link" to="/buy">Buy Pesaform</router-link>
+          <router-link class="nav-item nav-link" to="/mylist">Your Pesaforms</router-link>
+          <router-link class="nav-item nav-link" to="/allusers" href="#">All Users</router-link>
         </div>
       </div>
     </nav>
@@ -38,6 +31,13 @@ export default {};
 
 <style>
 nav {
-  width: 100%;
+  min-width: 100vw;
+  box-shadow: 0px 5px 10px black;
+}
+.navbar-brand {
+  text-transform: uppercase;
+  padding: 7px;
+  border: 2px solid white;
+  box-shadow: 0px 5px 5px black;
 }
 </style>
