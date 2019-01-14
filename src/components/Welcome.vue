@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h3>Welcome to The Pesaclub</h3>
+    <h3>Welcome to The PesaClub</h3>
     <h5>Please register here</h5>
     <form class="jumbotron">
       <div class="form-group">
