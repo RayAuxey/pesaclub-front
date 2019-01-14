@@ -14,7 +14,7 @@ export default {
     };
   },
   mounted() {
-    fetch("https://egoparkeastafrica/api/users")
+    fetch("https://egoparkeastafrica.com/api/users")
       .then(res => res.json())
       .then(res => {
         this.users = res.data.users;
