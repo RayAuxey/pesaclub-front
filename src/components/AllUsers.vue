@@ -1,7 +1,12 @@
 <template>
   <div class="container">
     <ul class="list-group">
-      <li class="list-group-item" v-for="user in users" :key="user._id">{{ user.name }}</li>
+      <li class="list-group-item" v-for="user in users" :key="user._id">
+        <h4>Name:</h4>
+        <p>{{ user.name }}</p>
+        <h4>Email:</h4>
+        <p>{{ user.email }}</p>
+      </li>
     </ul>
   </div>
 </template>
