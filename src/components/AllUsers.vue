@@ -2,9 +2,9 @@
   <div class="container">
     <ul class="list-group">
       <li class="list-group-item" v-for="user in users" :key="user._id">
-        <h6>Name:</h6>
+        <h5>Name:</h5>
         <p>{{ user.name }}</p>
-        <h6>Email:</h6>
+        <h5>Email:</h5>
         <p>{{ user.email }}</p>
       </li>
     </ul>
