@@ -14,7 +14,7 @@ export default {
     };
   },
   mounted() {
-    fetch("http://localhost:3000/api/users")
+    fetch("https://egoparkeastafrica/api/users")
       .then(res => res.json())
       .then(res => {
         this.users = res.data.users;
