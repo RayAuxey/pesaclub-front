@@ -17,7 +17,7 @@ export default {
     fetch("https://egoparkeastafrica.com/api/users")
       .then(res => res.json())
       .then(res => {
-        this.users = res.data.users;
+        this.users = res.users;
       });
   }
 };
