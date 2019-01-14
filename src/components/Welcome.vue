@@ -37,7 +37,7 @@
           v-model="user.password"
         >
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" @click.prevent="signup" class="btn btn-primary">Submit</button>
     </form>
   </div>
 </template>

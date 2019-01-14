@@ -38,6 +38,6 @@ nav {
   text-transform: uppercase;
   padding: 7px;
   border: 2px solid white;
-  box-shadow: 0px 5px 5px black;
+  box-shadow: 0px 2px 2px black;
 }
 </style>
