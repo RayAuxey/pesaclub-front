@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <h1>Welcome to The Pesaclub</h1>
-    <h3>Please register here</h3>
-    <form>
+    <h3>Welcome to The Pesaclub</h3>
+    <h5>Please register here</h5>
+    <form class="jumbotron">
       <div class="form-group">
         <label for="name">Name</label>
         <input
@@ -39,7 +39,7 @@
           v-model="user.password"
         >
       </div>
-      <button type="submit" @click.prevent="signup" class="btn btn-primary">Submit</button>
+      <button type="submit" @click.prevent="signup" class="btn btn-dark">Submit</button>
     </form>
   </div>
 </template>
@@ -82,5 +82,10 @@ export default {
 }
 .container > * {
   margin-bottom: 20px;
+}
+
+form {
+  border: 1px solid #343a40;
+  box-shadow: -1px 2px 5px #343a40, 1px 2px 5px #343a40;
 }
 </style>
