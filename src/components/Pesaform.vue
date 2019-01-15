@@ -1,22 +1,20 @@
 <template>
   <div>
-    <div class="card">
-      <div class="jumbotron">
-        <h5 class="card-title">Pesaform</h5>
-        <h6 class="card-subtitle">ID: {{pesaform._id}}</h6>
-        <div class="level-list">
-          <div class="list-title">
-            <h3>Level</h3>
-            <h3>Name</h3>
-          </div>
-          <ul class="list-group">
-            <li v-for="index in 8" :key="index" class="list-group-item">
-              <h4>{{index - 1}}</h4>
-              <h6 v-if="pesaform.users.length >= index">{{pesaform.users[0].name}}</h6>
-              <h6 v-else>Not filled</h6>
-            </li>
-          </ul>
+    <div class="jumbotron">
+      <h5 class="card-title">Pesaform</h5>
+      <h6 class="card-subtitle">ID: {{pesaform._id}}</h6>
+      <div class="level-list">
+        <div class="list-title">
+          <h3>Level</h3>
+          <h3>Name</h3>
         </div>
+        <ul class="list-group">
+          <li v-for="index in 8" :key="index" class="list-group-item">
+            <h4>{{index - 1}}</h4>
+            <h6 v-if="pesaform.users.length >= index">{{pesaform.users[0].name}}</h6>
+            <h6 v-else>Not filled</h6>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

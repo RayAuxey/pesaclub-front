@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <Pesaform v-if="ID !== null" :ID="ID"/>
+    <button class="btn btn-dark">Buy</button>
   </div>
 </template>
 
@@ -21,7 +22,6 @@ export default {
         .then(res => res.json())
         .then(res => {
           this.ID = res._id;
-          console.log(res._id);
         });
     else this.ID = this.$route.params.id;
   }
