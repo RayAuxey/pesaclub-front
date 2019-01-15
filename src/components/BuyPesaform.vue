@@ -21,7 +21,7 @@ export default {
         .then(res => res.json())
         .then(res => {
           this.ID = res._id;
-          console.log(this.$route.params.id);
+          console.log(res._id);
         });
     else this.ID = this.$route.params.id;
   }
