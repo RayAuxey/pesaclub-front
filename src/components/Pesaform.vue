@@ -3,7 +3,7 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Pesaform</h5>
-        <h6 class="card-subtitle">ID: {{pesaform.ID}}</h6>
+        <h6 class="card-subtitle">ID: {{pesaform._id}}</h6>
         <div class="level-list">
           <ul class="list-group">
             <li v-for="index in 8" :key="index" class="list-group-item">
