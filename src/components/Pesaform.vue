@@ -5,6 +5,10 @@
         <h5 class="card-title">Pesaform</h5>
         <h6 class="card-subtitle">ID: {{pesaform._id}}</h6>
         <div class="level-list">
+          <div class="list-title">
+            <h3>Level</h3>
+            <h3>Name</h3>
+          </div>
           <ul class="list-group">
             <li v-for="index in 8" :key="index" class="list-group-item">
               <h4>{{index - 1}}</h4>
@@ -36,8 +40,15 @@ export default {
 </script>
 
 <style scoped>
-.list-group-item {
+.list-group-item,
+.list-title {
   display: flex;
   justify-content: space-between;
+}
+.level-list {
+  margin-top: 20px;
+}
+.card {
+  box-shadow: 3px 5px 5px black, -3px 5px 5px black;
 }
 </style>
