@@ -19,7 +19,7 @@ export default {
     if (!this.ID)
       fetch("https://egoparkeastafrica.com/api/pesaform/one")
         .then(res => res.json())
-        .then(res => (ID = res._id));
+        .then(res => (this.ID = res._id));
   }
 };
 </script>
