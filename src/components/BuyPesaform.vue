@@ -16,7 +16,7 @@ export default {
     Pesaform
   },
   mounted() {
-    if (!ID)
+    if (!this.ID)
       fetch("https://egoparkeastafrica.com/api/pesaform/one")
         .then(res => res.json())
         .then(res => (ID = res._id));
