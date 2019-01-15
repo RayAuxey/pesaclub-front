@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Pesaform :ID="ID"/>
+    <Pesaform v-if="ID !== null" :ID="ID"/>
   </div>
 </template>
 
