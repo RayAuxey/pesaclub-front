@@ -14,6 +14,12 @@ export default {
   },
   components: {
     Pesaform
+  },
+  mounted() {
+    if (!ID)
+      fetch("https://egoparkeastafrica.com/api/pesaform/one")
+        .then(res => res.json())
+        .then(res => (ID = res._id));
   }
 };
 </script>

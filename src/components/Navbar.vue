@@ -23,7 +23,7 @@
           <router-link
             class="nav-item nav-link"
             :class="{active : currentLink === '/buy'}"
-            to="/404"
+            to="/buy"
           >Buy Pesaform</router-link>
           <router-link
             class="nav-item nav-link"

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="card">
-      <div class="card-body">
+      <div class="jumbotron">
         <h5 class="card-title">Pesaform</h5>
         <h6 class="card-subtitle">ID: {{pesaform._id}}</h6>
         <div class="level-list">
@@ -13,7 +13,7 @@
             <li v-for="index in 8" :key="index" class="list-group-item">
               <h4>{{index - 1}}</h4>
               <h6 v-if="pesaform.users.length >= index">{{pesaform.users[0].name}}</h6>
-              <h6 v-else>No user in this position</h6>
+              <h6 v-else>Not filled</h6>
             </li>
           </ul>
         </div>
@@ -48,7 +48,7 @@ export default {
 .level-list {
   margin-top: 20px;
 }
-.card {
-  box-shadow: 3px 5px 5px black, -3px 5px 5px black;
+.jumbotron {
+  box-shadow: -1px 2px 5px #343a40, 1px 2px 5px #343a40;
 }
 </style>

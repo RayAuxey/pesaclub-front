@@ -13,7 +13,8 @@ const routes = new VueRouter({
     { path: "/", component: Welcome },
     { path: "/allusers", component: AllUsers },
     { path: "/404", component: NotBuilt },
-    { path: "/buy/:id", component: BuyPesaform }
+    { path: "/buy/:id", component: BuyPesaform },
+    { path: "/buy", component: BuyPesaform }
   ]
 });
 
