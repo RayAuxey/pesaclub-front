@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <h1>{{_id}}</h1>
-    <Pesaform :_id="_id"/>
+    <h1>{{ID}}</h1>
+    <Pesaform :ID="ID"/>
   </div>
 </template>
 
@@ -10,7 +10,7 @@ import Pesaform from "./Pesaform";
 export default {
   data() {
     return {
-      _id: this.$route.params.id
+      ID: this.$route.params.id
     };
   },
   components: {
