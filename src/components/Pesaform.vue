@@ -7,8 +7,8 @@
         <div class="level-list">
           <ul class="list-group">
             <li v-for="index in 8" :key="index" class="list-group-item">
-              <h4>{{index}}</h4>
-              <h6 v-if="pesaform.users.length > index">{{pesaform.users[0].name}}</h6>
+              <h4>{{index - 1}}</h4>
+              <h6 v-if="pesaform.users.length >= index">{{pesaform.users[0].name}}</h6>
               <h6 v-else>No user in this position</h6>
             </li>
           </ul>
