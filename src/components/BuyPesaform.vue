@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <h1>{{_id}}</h1>
     <Pesaform :_id="_id"/>
   </div>
 </template>
