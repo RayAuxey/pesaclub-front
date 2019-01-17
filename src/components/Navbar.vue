@@ -54,11 +54,7 @@ export default {
       this.currentLink = this.$router.currentRoute.fullPath;
     }
   },
-  mounted() {
-    document.querySelectorAll(".nav-link").addEventListener("click", () => {
-      document.querySelector(".navbar-toggler").click();
-    });
-  }
+  mounted() {}
 };
 </script>
 
