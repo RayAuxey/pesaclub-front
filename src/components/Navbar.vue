@@ -55,9 +55,9 @@ export default {
     }
   },
   mounted() {
-    $('.nav-link').on('click', function() {
-      $('navbar-toggler').click()
-    })
+    document.querySelectorAll(".nav-link").addEventListener("click", () => {
+      document.querySelector(".navbar-toggler").click();
+    });
   }
 };
 </script>
