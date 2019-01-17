@@ -53,6 +53,11 @@ export default {
     $route(to, from) {
       this.currentLink = this.$router.currentRoute.fullPath;
     }
+  },
+  mounted() {
+    $('.nav-link').on('click', function() {
+      $('navbar-toggler').click()
+    })
   }
 };
 </script>
