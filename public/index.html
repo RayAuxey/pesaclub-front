@@ -41,5 +41,10 @@
       crossorigin="anonymous"
     ></script>
     <!-- built files will be auto injected -->
+    <script>
+      document.querySelectorAll(".nav-link").addEventListener("click", () => {
+        document.querySelector(".navbar-toggler").click();
+      });
+    </script>
   </body>
 </html>
