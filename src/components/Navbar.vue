@@ -14,7 +14,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ml-auto">
+        <div class="navbar-nav ml-auto mr-5">
           <router-link
             class="nav-item nav-link"
             :class="{active : currentLink === '/'}"
