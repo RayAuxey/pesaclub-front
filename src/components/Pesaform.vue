@@ -9,10 +9,37 @@
           <h3>Name</h3>
         </div>
         <ul class="list-group">
-          <li v-for="index in 8" :key="index" class="list-group-item">
-            <h4>{{index - 1}}</h4>
-            <h6 v-if="pesaform.users.length >= index">{{pesaform.users[0].name}}</h6>
-            <h6 v-else>Not filled</h6>
+          <li class="list-group-item">
+            <div>{{pesaform.level_0._id}}</div>
+            <div>{{pesaform.level_0.name}}</div>
+          </li>
+          <li class="list-group-item">
+            <div>{{pesaform.level_1._id}}</div>
+            <div>{{pesaform.level_1.name}}</div>
+          </li>
+          <li class="list-group-item">
+            <div>{{pesaform.level_2._id}}</div>
+            <div>{{pesaform.level_2.name}}</div>
+          </li>
+          <li class="list-group-item">
+            <div>{{pesaform.level_3._id}}</div>
+            <div>{{pesaform.level_3.name}}</div>
+          </li>
+          <li class="list-group-item">
+            <div>{{pesaform.level_4._id}}</div>
+            <div>{{pesaform.level_4.name}}</div>
+          </li>
+          <li class="list-group-item">
+            <div>{{pesaform.level_5._id}}</div>
+            <div>{{pesaform.level_5.name}}</div>
+          </li>
+          <li class="list-group-item">
+            <div>{{pesaform.level_6._id}}</div>
+            <div>{{pesaform.level_6.name}}</div>
+          </li>
+          <li class="list-group-item">
+            <div>{{pesaform.level_7._id}}</div>
+            <div>{{pesaform.level_7.name}}</div>
           </li>
         </ul>
       </div>
