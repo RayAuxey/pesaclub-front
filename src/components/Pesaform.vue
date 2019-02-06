@@ -9,35 +9,35 @@
           <h3>Name</h3>
         </div>
         <ul class="list-group">
-          <li class="list-group-item">
+          <li v-if="pesaform.level_0" class="list-group-item">
             <div>{{pesaform.level_0._id}}</div>
             <div>{{pesaform.level_0.name}}</div>
           </li>
-          <li class="list-group-item">
+          <li v-if="pesaform.level_1" class="list-group-item">
             <div>{{pesaform.level_1._id}}</div>
             <div>{{pesaform.level_1.name}}</div>
           </li>
-          <li class="list-group-item">
+          <li v-if="pesaform.level_2" class="list-group-item">
             <div>{{pesaform.level_2._id}}</div>
             <div>{{pesaform.level_2.name}}</div>
           </li>
-          <li class="list-group-item">
+          <li v-if="pesaform.level_3" class="list-group-item">
             <div>{{pesaform.level_3._id}}</div>
             <div>{{pesaform.level_3.name}}</div>
           </li>
-          <li class="list-group-item">
+          <li v-if="pesaform.level_4" class="list-group-item">
             <div>{{pesaform.level_4._id}}</div>
             <div>{{pesaform.level_4.name}}</div>
           </li>
-          <li class="list-group-item">
+          <li v-if="pesaform.level_5" class="list-group-item">
             <div>{{pesaform.level_5._id}}</div>
             <div>{{pesaform.level_5.name}}</div>
           </li>
-          <li class="list-group-item">
+          <li v-if="pesaform.level_6" class="list-group-item">
             <div>{{pesaform.level_6._id}}</div>
             <div>{{pesaform.level_6.name}}</div>
           </li>
-          <li class="list-group-item">
+          <li v-if="pesaform.level_7" class="list-group-item">
             <div>{{pesaform.level_7._id}}</div>
             <div>{{pesaform.level_7.name}}</div>
           </li>
